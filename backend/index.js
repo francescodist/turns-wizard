@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const port = 5000;
+const port = process.env.PORT ?? 3000;
 
 app.get("/status", (req, res) => {
   res.send("OK");
